@@ -1,0 +1,289 @@
+@import './common/_tools.scss';
+.container{
+  padding-top: .4rem;
+}
+.list-container-box1{
+  font-size: 0.48rem;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  padding: 0.2rem 0;
+  border-radius: 0.1rem;
+  font-weight: 600;
+  
+  .am-popover-inner{
+    text-align: center
+  }
+  .am-popover-caret{
+    position: absolute;
+    left: 50%;
+    margin-top: 0.22rem;
+    z-index: 100;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    vertical-align: middle;
+    border-bottom: 0.26rem solid #333;
+    border-right: 0.26rem solid transparent;
+    border-left: 0.26rem solid transparent;
+    border-top: 0 dotted;
+    overflow: hidden;
+    top: auto;
+    border-bottom-color: #d4d4d4;
+    transform: rotate(180deg);
+  }
+  .am-popover-carett{
+    position: absolute;
+    left: 50%;
+    margin-top: 0.2rem;
+    z-index: 100;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    vertical-align: middle;
+    border-bottom: .24rem solid #333;
+    border-right: .255rem solid transparent;
+    border-left: .25rem solid transparent;
+    border-top: 0 dotted;
+    transform: rotate(360deg);
+    overflow: hidden;
+    top: auto;
+    border-bottom-color: #fff;
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+  .list-container{
+    text-align: center;
+    font-size: 0.28rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow-y: scroll;
+    height: 100%;
+    .list-container-box2{
+      background-image: url(../../assets/img/qfbg.png);
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: contain;
+      background-color: #cd533e;
+      margin: 0 auto;
+      @media only screen and (min-height: 400px) {
+        height: 95%;
+      }
+      @media only screen and (min-height: 568px) {
+        height: 85%;
+      }
+      width: 85%;
+      .box2-jinbi{
+        color: #ff4336;
+        font-size: 0.65rem;
+        padding-top: 0.85rem;
+        font-weight: bold;
+      }
+      .box2-icon{
+        padding: 0.5rem 0;
+        img{
+          height: 1.4rem;
+          width: 1.4rem;
+        }
+      }
+      .box2-save{
+        margin: .5rem auto;
+        img{
+          height: 1.8rem;
+          width: 1.8rem;
+        }
+      }
+      .box2-text{
+        color: #faeab6;
+        font-size: .46rem;
+        margin: 0.2rem auto;
+      }
+
+      .box2-textd{
+        color: #faeab6;
+        font-size: .56rem;
+        margin: 0.4rem auto;
+      }
+
+      .box2-info{
+        color: #020202;
+        margin: 0 auto;
+        text-align: center;
+        width: 4rem;
+        font-size: .34rem;
+        background-color: #fff;
+        padding: 0.1rem;
+        border-radius: 0.1rem;
+        #box2-icon-img{
+          width: 3.8rem;
+          height: 3.8rem;
+          img{
+            width: 3.8rem;
+            height: 3.8rem;
+          }
+        }
+        div{
+          img{
+            width: 3.5rem;
+            height: 0.6rem;
+            margin: 0.1rem 0;
+          }
+        }
+      }
+    }
+    .list-container-box3{
+      background-color: #fff;
+      margin-bottom: 1.7rem;
+      font-size: 14px;
+      padding-top: 2.7rem;
+      .container-box3-scroll{
+        overflow-y: overlay;
+      }
+      .container-box3{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        border-top: 1px solid #e8e8e8;
+        .container-left{
+          width: 7.3rem;
+          padding: 0.3rem 0 0.3rem 0.5rem;
+          text-align: left;
+        }
+        .container-right{
+          width: 2.5rem;
+          padding: 0 0.1rem;
+          margin: auto;
+          .container-copy{
+            background-color: #f44b50;
+            color: #fff;
+            width: 2rem;
+            display: inline-block;
+            padding: 0.15rem 0.2rem;
+            border-radius: 0.5rem;
+          }
+          .container-yicopy{
+            background-color: rgb(204, 204, 204);
+            color: #fff;
+            width: 2rem;
+            display: inline-block;
+            padding: 0.15rem 0.2rem;
+            border-radius: 0.5rem;
+          }
+        }
+      }
+    }
+    .list-container-box4{
+      margin: 0.6rem 0.75rem;
+      height: 13rem;
+      .container-box4-one{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .mass-container-bottom{
+    font-size: 0.44rem;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+    height: 1.6rem;
+    padding: 0 0.5rem;
+    border-top: 1px solid #e8e8e8;
+    div{
+      flex: 1;
+      border-radius: 0.5rem;
+      padding: 0.15rem 0.3rem;
+      text-align: center;
+      margin: 0.23rem 0.3rem;
+      background-color: #cccccc;
+      color: #fff;
+      line-height: 0.8rem;
+    }
+    .mass-save{
+      background-color: #f44b50;
+    }
+    .mass-next{
+      background-color: #cccccc;
+    }
+    .mass-immediately{
+      background-color: #f44b50;
+    }
+  }
+
+  .wx-container{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    .wx-container-box1{
+      width: 100%;
+      background-image: url(../../assets/img/smjlsbt.png);
+      background-repeat: no-repeat;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      height: 4.5rem;
+    }
+    .wx-container-box2{
+      background-image: url('../../assets/img/wxbg.png');
+      background-position-y: 75%;
+      padding: 0 7% 5% 7%;
+      .wx-imgone{
+        @include back-img('../../assets/img/wxbg');
+        background-repeat: no-repeat;
+        position: relative;
+        display: inline-block;
+        background-size: cover;
+        height: 8rem;
+        width: 100%;
+      }
+      .wx-imgtwo{
+        @include back-img('../../assets/img/wxsmxc');
+        background-repeat: no-repeat;
+        position: relative;
+        display: inline-block;
+        background-size: cover;
+        height: 8rem;
+        width: 100%;
+      }
+      .wx-imgthree{
+        @include back-img('../../assets/img/wxsmxz');
+        background-repeat: no-repeat;
+        position: relative;
+        display: inline-block;
+        background-size: cover;
+        height: 8rem;
+        width: 100%;
+      }
+      .wx-txt{
+        font-size: 0.38rem;
+        text-align: center;
+        color: #fff;
+        padding: 0.5rem 0;
+        font-weight: bold;
+      }
+    } 
+    .wx-container-box3{
+      padding: 0 5%;
+      font-size: 0.44rem;
+      .box3-open{
+        background-image: url(../../assets/img/openwx.png);
+        background-repeat: no-repeat;
+        position: relative;
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+        padding: 0.2rem 0;
+        margin: 0.2rem 0;
+        color: #f13d41;
+        width: 90%;
+        text-align: center;
+      }
+    }
+  }

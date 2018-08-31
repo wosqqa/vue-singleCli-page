@@ -1,0 +1,240 @@
+@import './common/_tools.scss';
+
+.text-red{
+    color: red;
+}
+@keyframes myfirstscoll {
+    0% {
+        // margin-left: 0rem;
+        transform: translate3d(50%, 0, 0);
+    }
+  
+    100% {
+        // margin-left: -8rem;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes myfirstchai {
+    0% {
+        transform:translate3d(0, 0px, 0);
+        // transition:padding-top 500ms;
+    }
+
+    50% {
+        transform:translate3d(0, 5px, 0);
+        // transition:padding-top 500ms;
+    }
+
+    100% {
+        transform:translate3d(0, 0px, 0);
+        // transition:padding-top 500ms;
+    }
+}
+.rentice_one-container{
+    // display: flex;
+    // flex-flow: column nowrap;
+    // justify-content: space-between;
+    -webkit-overflow-scrolling: touch;  
+    background-color: #fff;
+    .rentice_top{
+        position: fixed;
+        width: 100%;
+        top: 56px;
+        background-color: #fff3ea;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        color: #ba6627;
+        z-index: 101;
+        font-size: 0.35rem;
+        padding-left: 0.4rem;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0.2rem;
+            width: .42rem;
+            height: .42rem;
+            margin-top: 0.2rem;
+            background: url('../../assets/img/share/guangbo.png') center right no-repeat;
+            background-size: 100%;
+        }
+        .rentice_top_txt{
+            margin-left: 0.4rem;
+            position: relative;
+            white-space: normal;
+            width: 8.5rem;
+            height: 0.75rem;
+            display: inline-block;
+            overflow: hidden;
+            display: block;
+            width: 90%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            .rentice_top_txtscoll{
+                animation: myfirstscoll 15s infinite linear;
+                width: 20rem;
+            }
+        }
+    }
+    .rentice_box1{
+        width: 100%;
+        position:static;
+        height: 5.5rem;
+        display: inline-block;
+        background-size: cover;
+        vertical-align: middle;
+        -webkit-overflow-scrolling: touch;  
+        overflow-y: scroll;
+        // height: 4.1rem;
+        background-image: url('../../assets/img/share/chaih.gif');
+        background-repeat: no-repeat;
+        background-size: 90%;
+        padding: 0rem 0.4rem;
+        background-position: center;
+        .box1-tez{
+            font-size: 0.6rem;
+            color: #fff;
+            margin: 0.5rem 0 0rem 0.9rem;
+            text-align: center;
+            @include bgnrcbc(1rem,'../../assets/img/share/yqstzq');
+            width: 7.7rem;
+            box-sizing: border-box;
+            background-size: 100%;
+            margin: 0.5rem 1rem 0.1rem;
+        }
+        .box1-btn{
+            font-size: 0.32rem;
+            font-weight: 500;
+            text-align: center;
+            padding-top: 0.5rem;
+            height: 1.1rem;
+            // animation: myfirstchai 2.5s infinite;
+            span{
+                display: inline-block;
+                color: #fff100;
+                height: 0.64rem;
+                line-height: 0.64rem;
+                border-radius: 0.9rem;
+                box-shadow: 1px 2px 13px #f54c50;
+                border: 1px solid #ff9b4f;
+                min-width: 2.4rem;
+                padding: 0 0.2rem;
+                margin: 0rem auto;
+            }
+        }
+        .box1-chai{
+            height: 2.45rem;
+            width: 4rem;
+            margin: 0 auto;
+        }
+        .box1-yqm{
+            color: #fff;
+            font-size: 0.35rem;
+            margin: 0.1rem 1.9rem;
+            text-align: center;
+            background-color: #c9252a;
+            border-radius: 0.5rem;
+            padding: 0.1rem;
+        }
+        .box1-txt{
+            color: #fff;
+            font-size: 0.42rem;
+            margin: 0rem 1.5rem;
+            height: 0.6rem;
+            text-align: center;
+        }
+        .box1-right{
+            color: #fff;
+            width: 1.8rem;
+            background-color: #ffaf1f;
+            line-height: 0.7rem;
+            height: 0.7rem;
+            position: absolute;
+            top: 1.1rem;
+            right: 0rem;
+            font-size: 0.32rem;
+            z-index: 100;
+            border-radius: 0.5rem 0 0 0.5rem;
+            padding-left: 0.3rem;
+        }
+    }
+    .rentice_box2{
+        // position: absolute;
+        // right: 0;   
+        // bottom: 0;   
+        // left: 0;  
+        // top: 0;  
+        // margin-top: 4.1rem; 
+        margin-bottom: 50px;
+        position:static;
+        #dialogFrame{
+            z-index: -1;
+            width: 100%; 
+        }
+    }
+    .rentice_box3{
+        .popup-close{
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.34rem;
+            border-top: 1px solid #e8e8e8;
+        }
+        .video-share{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 3000;
+            top: 0;
+            left: 0;
+            background-color: #000000;
+        }
+        .video-share-btn{
+            background-color: #4e9af2;
+            margin: 0.5rem 3rem;
+            line-height: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            color: #fff;
+            font-size: 0.38rem;
+        }
+    }
+    .rentice_box4{
+        position: fixed;
+        // -webkit-transform: translateZ(0);
+        -webkit-transform: translate3d(0,0,0);
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        .rentice_box4-c{
+            display: flex;
+            height: 50px;
+            z-index: 100;
+            background-color: #ffaf1f;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            color: #fff;
+            font-size: 0.45rem;
+            line-height: 50px;
+        }
+        .rentice_box4-img{
+            margin: 0 auto;
+            @include bgnrcbc(1.1rem,'../../assets/img/share/shoufc');
+            width: 5rem;
+            display: block;
+            box-sizing: border-box;
+            background-size: 100%;
+        }
+        // box-shadow: 0px 0px 1px #888888;
+    }
+    .popup-modal{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+        background: #000;
+    }   
+}

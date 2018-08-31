@@ -1,0 +1,79 @@
+@import './common/_vars.scss';
+@import './common/_tools.scss';
+@import './common/_icon@2x.scss';
+
+    //唤醒徒儿
+    .awaken-container{
+        font-size:14px;
+        .container-box1{
+            font-size: 14px;
+            position: fixed;
+            -webkit-transform: translate3d(0,0,0);
+            width: 100%;
+            .list-top{
+              background-color: #ffe6ba;
+              text-align: center;
+              padding: 0.15rem 0;
+              color: #b86d0b;
+            }
+            .list-title{
+                border-bottom: 1px solid #f4f4f4;
+                line-height: 1.16rem;
+                padding-left: 0.4rem;
+                background-color: #fff;
+                font-size: 15px;
+                color: #333333;
+            }
+        }
+        .list-sf .list-title{
+            font-size: 0.34rem;
+            line-height: 0.7rem;
+        }
+        .container-box4{
+            padding-top: 1.85rem;
+            -webkit-overflow-scrolling: touch;
+            .list-sf{
+                @include list-title('../../assets/img/icon/myte');
+                @include list-txt();
+                .list-txt{
+                border-bottom: 1px solid #f4f4f4;
+                padding: .25rem .3rem .15rem 0.3rem
+                }
+            }
+        }
+    }
+  .awaken-container-nothing{
+    @include container-nothing('../../assets/img/icon/whhte');
+    padding-top: 2.8rem;
+    position: absolute;
+    margin: 0 auto;
+  }
+
+  #awaken-box2-dialog{
+    .container-box2{
+      position: fixed;
+      -webkit-transform: translate3d(0,0,0);
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+      @include flexrnsa();
+      font-size: 17px;  
+      height: 50px;
+      line-height: 25px;
+      text-align: center;
+      width: 100%;
+      border-top: 1px solid #f4f4f4;
+      .box2-sb{
+        flex: 1;
+        padding: 0.3rem 0;
+        background-color: #f44b50;
+        color: #fff;
+      }
+      .box2-txlsb{
+        flex: 1;
+        padding: 0.3rem 0;
+        background-color: #fff;
+        color: #f44b50;
+      }
+    }
+  }

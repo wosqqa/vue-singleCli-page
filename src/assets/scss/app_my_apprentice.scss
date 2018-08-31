@@ -1,0 +1,97 @@
+@import './common/_vars.scss';
+@import './common/_tools.scss';
+@import './common/_icon@2x.scss';
+.text-red{
+  color: red
+}
+
+// 我的徒儿
+.dsciple-container{
+    font-size:0.36rem;
+    .container-box1{
+      @include flexrnsa();
+      background-color: #f44b50;
+      padding: 18px 10px;
+      div{
+        flex: 1;
+        p{
+          font-size:26px;
+          color: #fff;
+          text-align: center;
+          font-weight: bold;
+        }
+        .box1-p{
+          font-size:13px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    } 
+    .container-box2{
+      padding: .2rem 0.4rem;
+      font-size: 13px;
+      background: #ffffff;
+      line-height: 0.55rem;
+      .signTributeBtn{
+        color: #f44b50
+      }
+    }
+    .container-box3{
+      padding-top: .2rem;
+      background-color: #f4f4f4;
+      .list-sf{
+        @include list-title('../../assets/img/icon/mysf');
+        @include list-txt();
+      }
+    }
+    .container-box4{
+      padding-top: .2rem;
+      background-color: #f4f4f4;
+      .list-sf{
+        @include list-title('../../assets/img/icon/myte');
+        @include list-txt();
+        .list-txt{
+          border-bottom: 1px solid #f4f4f4;
+          padding: .30rem .3rem .1rem 0.3rem;
+        }
+        .list-brtr{
+          float: right;
+          border-radius: .5rem;
+          padding: .05rem .2rem;
+          background-color: #fff;
+          font-size: 13px;
+          line-height: 0.6rem;
+          color: #f44b50;
+          border: 1px solid;
+        }
+      }
+    }
+  }
+
+  
+  .dsciple-container-nothing{
+      @include container-nothing('../../assets/img/icon/wdtekb');
+      padding: 2.59rem 0;
+      -webkit-overflow-scrolling: touch;
+      margin: 0 auto;
+  }
+
+  .awaken-container-nothing{
+    @include container-nothing('../../assets/img/icon/whhte');
+    padding: 2.59rem 0;
+    position: absolute;
+    margin: 0 auto;
+  }
+
+  #dsciple-box5-dialog{
+    .container-box5{
+      @include bgnrcbc(1rem,'../../assets/img/icon/fcsbte');
+      top: 90%;
+      right: 0;
+      position: fixed;
+      background-size: contain;
+      width: 2.6rem;
+      z-index: 1000;
+      height: 0.9rem;
+    }
+  }

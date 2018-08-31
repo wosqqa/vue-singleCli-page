@@ -1,0 +1,95 @@
+.text-red{
+  color: red;
+}
+.app_inviteCode{
+    width: 10rem;
+    margin: 0 auto;
+    height: 100%;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    .code-container{
+      margin: 0 1rem;
+      text-align: center;
+      .code-box1{
+        padding: 0.5rem 0;
+      }
+      .code-box2{
+        input{
+          border-radius: 0.8rem;
+          border: 1px solid #dfdfdf;
+          -webkit-user-select:auto;
+          background-color: #fff;
+          color: #999;
+          width: 6rem;
+          text-align: center;
+          padding: 0.3rem 0.8rem;
+          font-size: 14px;
+          background-color:transparent;  
+          -webkit-tap-highlight-color:rgba(0,0,0,0);
+          color:#999;  
+          FILTER: alpha(opacity=0); /*androd*/  
+          appearance:none;  /*下拉框去掉右侧图标*/  
+          -moz-appearance:none;  
+          -webkit-appearance:none; 
+        }
+      }
+      .code-box3{
+        line-height: 1.2rem;
+        width: 6rem;
+        height: 1.2rem;
+        padding: 0 .8rem;
+        font-size: 16px;
+        border-radius: .8rem;
+        background-color: #55aaec;
+        margin: 0.4rem auto;
+        color: #fff;
+      }
+      .code-box4{
+        line-height: 1rem;
+        height: 1rem;
+        color: #999;
+      }
+      .code-copy{
+        font-size: 20px;
+        line-height: 0.8rem;
+        height: 0.8rem;
+        div{
+          font-size: 16px;
+          color: #999;
+          margin-bottom: 0.5rem;
+        }
+      }
+      .code-img{
+        margin-top: 0.5rem;
+        img{
+          width: 3.5rem;
+        }
+      }
+      .code-red{
+        color: red;
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+      }
+      .code-info{
+        font-size: 12px;
+        line-height: 0.7rem;
+        text-align: left;
+      }
+      .code-btnfx{
+        background-color: #f3494f;
+        color: #fff;
+        border-radius: .8rem;
+        line-height: 1.2rem;
+        height: 1.2rem;
+        font-size: 16px;
+        margin: 0.3rem 0;
+      }
+    }
+    .code-split{
+      height: 0.3rem;
+      background-color: #f4f4f4;
+    }
+    
+  }

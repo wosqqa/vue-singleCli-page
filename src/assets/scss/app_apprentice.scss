@@ -1,0 +1,326 @@
+@import './common/_vars.scss';
+@import './common/_tools.scss';
+@import './common/_icon@2x.scss';
+.text-red{
+  color: red;
+}
+// 邀请收徒
+.myrentice-container{
+  background-color: #ffffff;
+  padding-top: 0.4rem;
+  -webkit-overflow-scrolling: touch;
+  font-size: 14px;
+  .myrentice-modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2000;
+    background: #fff;
+  }
+  .con-box1{
+    margin: 0 16px;
+    padding: 8px;
+    background-color: #feeded;
+    font-size: 16px;
+    border-radius: .15rem;
+    text-align: center;
+    .box1-img-jl{
+      // background-image: url('../../assets/img/stjldt.gif');
+      // background-repeat: no-repeat;
+      position: relative;
+      display: inline-block;
+      background-size: cover;
+      width: 1rem;
+      height: 1rem;
+      vertical-align:middle;
+    }
+    .box1-img-wh{
+      width: 0.5rem;
+      margin-left: 0.1rem;
+      @include bgnrcbc(0.5rem,'../../assets/img/icon/wh');
+      vertical-align:middle;
+    }
+  }
+  .con-box2{
+    font-size: 12px;
+    color: #4b98f3;
+    text-align: center;
+    padding-top: 0.25rem;
+    margin: 0 1.5rem;
+    padding-bottom: 0.15rem;
+  }
+  .con-box3{
+    @include flexrwsa();
+    justify-content: center;
+    padding: 0.2rem 0;
+    font-size: 13px;
+    div{
+      width: 23%;
+      margin: 0.2rem 0;
+      text-align: center;
+    }
+    .rf-text-red{
+      color: #fff;
+      background-color: #f44b50;
+      border-radius: 50%;
+      float: right;
+      font-size: 10px;
+      padding: 1.5px 2px;
+      box-sizing: border-box;
+    }
+    .box3-img-wx{
+      margin: .1rem;
+      @include bgnrcbc(1.2rem,'../../assets/img/icon/wx');
+    }
+    .box3-img-qq{
+      margin: .1rem;
+      @include bgnrcbc(1.2rem,'../../assets/img/icon/QQ');
+    }
+    .box3-img-dx{
+      margin: .1rem;
+      @include bgnrcbc(1.2rem,'../../assets/img/icon/dx');
+    }
+    .box3-img-wb{
+      margin: .1rem;
+      @include bgnrcbc(1.2rem,'../../assets/img/icon/wb');
+    }
+    .box3-img-qf{
+      margin: .1rem;
+      @include bgnrcbc(1.2rem,'../../assets/img/icon/qf');
+    }
+    .box3-img-pyq{
+      margin: .1rem;
+      @include bgnrcbc(1.2rem,'../../assets/img/icon/pyq');
+    }
+    .box3-img-ewm{
+      margin: .1rem;
+      @include bgnrcbc(1.2rem,'../../assets/img/icon/ewm');
+    }
+  }
+  .con-box4{
+    @include flexrnsa();
+    font-size: 13px;
+    height: 1.6rem;
+    margin-top: 0.5rem;
+    background-color: #f4f4f4;
+    div{
+      background-color: #fff;
+      border-radius: .5rem;
+      margin: 0.35rem 0.25rem;
+      text-align: center;
+      flex: 1;
+      line-height: 0.9rem;
+      .box4-img-ssr{
+        vertical-align:middle;
+        margin-right: 0.05rem;
+        @include bgnrcbc(0.5rem,'../../assets/img/icon/ssr');
+      }
+      .box4-img-hxhy{
+        vertical-align:middle;
+        margin-right: 0.05rem;
+        @include bgnrcbc(0.5rem,'../../assets/img/icon/hxhy');
+      }
+    }
+  }
+  .con-box5{
+    .box5-txt-hcwf{
+      @include bgnrcbc(0.8rem,'../../assets/img/icon/sthchwf');
+      background-position: center;
+      background-size: 70%;
+      width: 100%;
+      height: 1.2rem;
+      color: red;
+      text-align: center;
+      padding-top: 1.8rem;
+    }
+    .box5-txt-hcwft{
+      font-size: 16px;
+      line-height: 0.65rem;
+      padding: 0rem .30rem 0.3rem 0.50rem;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .box5-txt-wfgx{
+      font-size: .30rem;
+      padding: 0.1rem .3rem;
+      position: relative;
+      @include flexcnsa();
+      .step_line{
+        width: 0.02rem;
+        top: 0px;
+        bottom: 0px;
+        left: 0.45rem;
+        margin-top: 0.5rem;
+        position: absolute;
+        border-color: inherit;
+        background-color: rgb(255, 222, 0);
+      }
+      .box5-txt-wfgxli{
+        @include flexrnsa();
+        position: relative;
+        flex-shrink: 1;
+        .box5-txt-wfgxdh{
+          flex-grow: 0;
+          width: 0.6rem;
+          padding: .4rem 0rem .1rem 0rem;
+          .step_one{
+            top: .5rem;
+          }
+          .is-text{
+            position: relative;
+            z-index: 1;
+            background-color: #ffde00;
+            border-radius: 50%;
+            margin: 0 auto;
+            width: .35rem;
+            height: .35rem;
+            display: inline-block;
+          }
+        }
+        .box5-txt-wfgxxq{
+          flex-grow:1;
+          .wfgxxq-txt-bnt{
+            @include flexrnsa();
+            border-bottom: 1px solid #e8e8e8;
+            padding: .2rem 0;
+            .wfgxxq-txt{
+              width: 6.2rem;
+              font-size: 14px;
+              margin-right: 0.2rem;
+              @include flexcnsa();
+              div{
+                padding: 0.05rem 0;
+                line-height: 0.6rem;
+                color: #4e4e4e;
+              }
+              .wfgxxq-title{
+                font-size: 16px;
+                font-weight: 500;
+                padding-bottom: .1rem;
+                align-self: flex-start;
+                color: #000000;
+              }
+            }
+            .wfgxxq-bnt{
+              width: 2.5rem;
+              text-align: center;
+              align-self: center;
+              font-size: 14px;
+              span{
+                color: #fff;
+                background-color: #f44b50;
+                border-radius: .5rem;
+                padding: 0.15rem .3rem;
+                display: block;
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+}
+//tips
+.myrentice-container-tips{
+    position: fixed;
+    top: 3rem;
+    right: .1rem;
+    z-index: 9999;
+  .myrentice-dialog-tips{
+    position: relative;
+    font-size: 14px;
+    height: auto;
+    width: 180px;
+    background-color: rgba(34,34,34,.68);
+    color: #fff;
+    border-radius: .1rem;
+    padding: .1rem .2rem;
+    text-align: left;
+  }
+  .popover-caret{
+    // position: fixed;
+    // z-index: 9999;
+    // top: 2.74rem;
+    // right: 2.2rem;
+    position: absolute;
+    top: -8px;
+    left: 80px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-bottom: 8px solid rgba(34,34,34,.68);
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 0 dotted;
+    overflow: hidden;
+    border-bottom-color: rgba(34,34,34,.68);
+    transform: rotate(360deg);
+  }
+}
+
+//规则弹层
+.myrentice-container-dialog{
+  display: block;
+  animation-duration: .5s;
+  @include dialog();
+  .dialog-content{
+    margin: 2rem 1rem;
+    height: 70%;
+    color: #222;
+    .dialog-close{
+      background-color: #fff;
+      width: 100%;
+      height: 0.4rem;
+      span{
+        float: right;
+        @include bgnrcbc(0.4rem,'../../assets/img/icon/gzclose');
+      }
+    }
+    .dialog-cont{
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      height: 96%;
+      .dialog-title{
+        @include bgnrcbc(1rem,'../../assets/img/icon/jlffgz');
+        background-position: center;
+        background-size: 80%;
+        width: 100%;
+        height: 1rem;
+      }
+      .dialog-txt{
+        padding-bottom: 0.1rem;
+        font-size: 14px;
+        line-height: 0.7rem;
+        margin: 0.4rem 0;
+      }
+      .dialog-btn{
+        background-color: #ff503b;
+        color: #fff;
+        text-align: center;
+        line-height: 0.5rem;
+        border-radius: 0.4rem;
+        padding: 0.2rem 0;
+        margin: 0.2rem 1rem;
+      }
+      .dialog-ffjl{
+        @include flexrnsa();
+        padding: 0.5rem 0;
+        .dialog-img{
+          flex: 1;
+          @include bgnrcbc(0.8rem,'../../assets/img/icon/jlffgzh');
+          background-size: 90%;
+          width: auto;
+          height: auto;
+        }
+        .dialog-jl{
+          font-size: 11px;
+        }
+    }
+
+    }
+    
+  }
+}
